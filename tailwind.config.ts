@@ -64,14 +64,14 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				quantoblue: {
-					light: '#E5DEFF',
-					DEFAULT: '#0EA5E9',
-					dark: '#1A1F2C',
+					light: '#C5D1E9',
+					DEFAULT: '#1352DE',
+					dark: '#0A3188',
 				},
-				quantopurple: {
-					light: '#D6BCFA',
-					DEFAULT: '#8B5CF6',
-					dark: '#6E59A5',
+				quantogrey: {
+					light: '#D9DDE7',
+					DEFAULT: '#BBC1D3',
+					dark: '#8992A9',
 				}
 			},
 			borderRadius: {

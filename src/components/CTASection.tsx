@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-quantoblue-dark to-quantopurple-dark text-white">
+    <section id="pricing" className="py-20 bg-gradient-to-br from-quantoblue-dark to-quantoblue text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -41,13 +41,13 @@ const CTASection = () => {
                     <span>Connect up to 5 accounts</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-white text-quantopurple hover:bg-gray-100">
+                <Button className="w-full bg-white text-quantoblue hover:bg-gray-100">
                   Start Free Trial
                 </Button>
               </div>
               
               <div className="flex-1 bg-white rounded-lg p-6 text-quantoblue-dark text-left relative">
-                <div className="absolute -top-4 right-4 bg-quantopurple text-white text-xs font-bold px-3 py-1 rounded-full">
+                <div className="absolute -top-4 right-4 bg-quantoblue text-white text-xs font-bold px-3 py-1 rounded-full">
                   MOST POPULAR
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Premium Plan</h3>
@@ -81,7 +81,7 @@ const CTASection = () => {
                     <span>Unlimited accounts</span>
                   </li>
                 </ul>
-                <Button className="w-full bg-quantopurple hover:bg-quantopurple-dark text-white">
+                <Button className="w-full bg-quantoblue hover:bg-quantoblue-dark text-white">
                   Start Free Trial
                 </Button>
               </div>

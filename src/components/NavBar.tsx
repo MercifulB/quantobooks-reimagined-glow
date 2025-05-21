@@ -32,32 +32,37 @@ const NavBar = () => {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
-          <Link to="/" className="text-2xl font-bold text-quantoblue-dark">
-            <span className="text-quantopurple">Quanto</span>Books
+          <Link to="/" className="flex items-center">
+            <img 
+              src="/lovable-uploads/32ed1cdc-0538-4671-a1e8-85cfc4a06777.png" 
+              alt="QuantoBooks Logo" 
+              className="h-10 w-auto mr-2" 
+            />
+            <span className="text-2xl font-bold text-quantoblue">Quanto<span className="text-quantogrey-dark">Books</span></span>
           </Link>
         </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-gray-700 hover:text-quantopurple transition-colors">
+          <a href="#features" className="text-gray-700 hover:text-quantoblue transition-colors">
             Features
           </a>
-          <a href="#how-it-works" className="text-gray-700 hover:text-quantopurple transition-colors">
+          <a href="#how-it-works" className="text-gray-700 hover:text-quantoblue transition-colors">
             How It Works
           </a>
-          <a href="#testimonials" className="text-gray-700 hover:text-quantopurple transition-colors">
+          <a href="#testimonials" className="text-gray-700 hover:text-quantoblue transition-colors">
             Testimonials
           </a>
-          <a href="#pricing" className="text-gray-700 hover:text-quantopurple transition-colors">
+          <a href="#pricing" className="text-gray-700 hover:text-quantoblue transition-colors">
             Pricing
           </a>
         </div>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="outline" className="border-quantopurple text-quantopurple hover:bg-quantopurple hover:text-white">
+          <Button variant="outline" className="border-quantoblue text-quantoblue hover:bg-quantoblue hover:text-white">
             Log In
           </Button>
-          <Button className="bg-quantopurple hover:bg-quantopurple-dark text-white">
+          <Button className="bg-quantoblue hover:bg-quantoblue-dark text-white">
             Get Started
           </Button>
         </div>
@@ -86,23 +91,23 @@ const NavBar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white shadow-lg absolute w-full py-4">
           <div className="container mx-auto px-4 flex flex-col space-y-4">
-            <a href="#features" className="text-gray-700 hover:text-quantopurple py-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <a href="#features" className="text-gray-700 hover:text-quantoblue py-2" onClick={() => setIsMobileMenuOpen(false)}>
               Features
             </a>
-            <a href="#how-it-works" className="text-gray-700 hover:text-quantopurple py-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <a href="#how-it-works" className="text-gray-700 hover:text-quantoblue py-2" onClick={() => setIsMobileMenuOpen(false)}>
               How It Works
             </a>
-            <a href="#testimonials" className="text-gray-700 hover:text-quantopurple py-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <a href="#testimonials" className="text-gray-700 hover:text-quantoblue py-2" onClick={() => setIsMobileMenuOpen(false)}>
               Testimonials
             </a>
-            <a href="#pricing" className="text-gray-700 hover:text-quantopurple py-2" onClick={() => setIsMobileMenuOpen(false)}>
+            <a href="#pricing" className="text-gray-700 hover:text-quantoblue py-2" onClick={() => setIsMobileMenuOpen(false)}>
               Pricing
             </a>
             <div className="flex flex-col space-y-2 pt-2">
-              <Button variant="outline" className="border-quantopurple text-quantopurple hover:bg-quantopurple hover:text-white w-full">
+              <Button variant="outline" className="border-quantoblue text-quantoblue hover:bg-quantoblue hover:text-white w-full">
                 Log In
               </Button>
-              <Button className="bg-quantopurple hover:bg-quantopurple-dark text-white w-full">
+              <Button className="bg-quantoblue hover:bg-quantoblue-dark text-white w-full">
                 Get Started
               </Button>
             </div>

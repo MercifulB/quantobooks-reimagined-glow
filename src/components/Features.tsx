@@ -25,7 +25,7 @@ const FeatureCard = ({ icon, title, description, delay }: FeatureProps) => {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <div className="h-12 w-12 rounded-lg bg-quantopurple-light flex items-center justify-center mb-4">
+      <div className="h-12 w-12 rounded-lg bg-quantoblue-light flex items-center justify-center mb-4">
         {icon}
       </div>
       <h3 className="text-xl font-semibold text-gray-800 mb-3">{title}</h3>
@@ -38,7 +38,7 @@ const Features = () => {
   const features = [
     {
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-quantopurple">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-quantoblue">
           <circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path>
         </svg>
       ),
@@ -47,7 +47,7 @@ const Features = () => {
     },
     {
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-quantopurple">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-quantoblue">
           <path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path>
         </svg>
       ),
@@ -56,7 +56,7 @@ const Features = () => {
     },
     {
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-quantopurple">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-quantoblue">
           <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
         </svg>
       ),
@@ -65,7 +65,7 @@ const Features = () => {
     },
     {
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-quantopurple">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-quantoblue">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path><path d="M8 11h8"></path><path d="M12 15V7"></path>
         </svg>
       ),
@@ -74,7 +74,7 @@ const Features = () => {
     },
     {
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-quantopurple">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-quantoblue">
           <rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M7 7h10"></path><path d="M7 12h10"></path><path d="M7 17h4"></path>
         </svg>
       ),
@@ -83,7 +83,7 @@ const Features = () => {
     },
     {
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-quantopurple">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-quantoblue">
           <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"></path>
         </svg>
       ),
@@ -97,7 +97,7 @@ const Features = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-quantoblue-dark mb-4">
-            Powered by <span className="text-quantopurple">Intelligent</span> Technology
+            Powered by <span className="text-quantoblue">Intelligent</span> Technology
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             QuantoBooks combines cutting-edge AI with accounting expertise to deliver a financial management solution unlike any other.

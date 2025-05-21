@@ -3,26 +3,26 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-white to-blue-50 pt-24 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-white to-quantogrey-light pt-24 overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(139,92,246,0.3)_0%,rgba(255,255,255,0)_60%)]"></div>
-        <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_80%,rgba(14,165,233,0.4)_0%,rgba(255,255,255,0)_60%)]"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(19,82,222,0.3)_0%,rgba(255,255,255,0)_60%)]"></div>
+        <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_80%,rgba(187,193,211,0.4)_0%,rgba(255,255,255,0)_60%)]"></div>
       </div>
       
       <div className="container relative z-10 mx-auto px-4 py-24 md:py-32 flex flex-col md:flex-row items-center">
         {/* Text Content */}
         <div className="md:w-1/2 md:pr-8 mb-12 md:mb-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-quantoblue-dark leading-tight mb-6">
-            Accounting Powered by <span className="text-quantopurple">AI Intelligence</span>
+            Accounting Powered by <span className="text-quantoblue">AI Intelligence</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 mb-8">
             QuantoBooks combines artificial intelligence with accounting expertise to automate your finances, uncover insights, and save you time and money.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button className="bg-quantopurple hover:bg-quantopurple-dark text-white text-lg px-8 py-6 rounded-lg">
+            <Button className="bg-quantoblue hover:bg-quantoblue-dark text-white text-lg px-8 py-6 rounded-lg">
               Get Started Free
             </Button>
-            <Button variant="outline" className="border-quantoblue text-quantoblue hover:bg-quantoblue hover:text-white text-lg px-8 py-6 rounded-lg">
+            <Button variant="outline" className="border-quantogrey-dark text-quantoblue hover:bg-quantogrey hover:text-quantoblue-dark text-lg px-8 py-6 rounded-lg">
               Schedule Demo
             </Button>
           </div>
@@ -54,8 +54,8 @@ const Hero = () => {
         <div className="md:w-1/2 relative animate-fade-in" style={{ animationDelay: "0.5s" }}>
           <div className="relative w-full aspect-square max-w-lg mx-auto">
             {/* Decorative elements */}
-            <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-quantopurple-light rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-float" style={{ animationDelay: "0s" }}></div>
-            <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-float" style={{ animationDelay: "1s" }}></div>
+            <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-quantoblue-light rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-float" style={{ animationDelay: "0s" }}></div>
+            <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-quantogrey-light rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-float" style={{ animationDelay: "1s" }}></div>
             
             {/* Dashboard mockup */}
             <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 w-full aspect-[4/3] transform rotate-2 hover:rotate-0 transition-transform duration-500">
@@ -72,7 +72,7 @@ const Hero = () => {
                     <h3 className="text-lg font-semibold text-gray-800">Financial Dashboard</h3>
                     <p className="text-sm text-gray-500">May 2025</p>
                   </div>
-                  <div className="bg-quantopurple text-white text-xs px-3 py-1 rounded-full">AI-Powered</div>
+                  <div className="bg-quantoblue text-white text-xs px-3 py-1 rounded-full">AI-Powered</div>
                 </div>
                 
                 <div className="space-y-4">
@@ -96,15 +96,15 @@ const Hero = () => {
                     </div>
                   </div>
                   
-                  <div className="bg-quantopurple-light p-3 rounded-lg">
+                  <div className="bg-quantoblue-light p-3 rounded-lg">
                     <div className="flex items-center">
-                      <div className="h-8 w-8 rounded-full bg-quantopurple flex items-center justify-center text-white">
+                      <div className="h-8 w-8 rounded-full bg-quantoblue flex items-center justify-center text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                           <path d="M12 2l9 4.9V17L12 22l-9-4.9V7z"/><path d="M12 16.5v-11"/><path d="M7 7.8l5 2.7"/><path d="M17 7.8l-5 2.7"/>
                         </svg>
                       </div>
                       <div className="ml-3">
-                        <p className="text-xs text-quantopurple font-semibold">AI INSIGHT</p>
+                        <p className="text-xs text-quantoblue font-semibold">AI INSIGHT</p>
                         <p className="text-sm text-gray-700">Cut software subscriptions to save $1,245/month</p>
                       </div>
                     </div>

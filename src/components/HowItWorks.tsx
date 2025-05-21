@@ -33,11 +33,11 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 bg-gray-50">
+    <section id="how-it-works" className="py-20 bg-quantogrey-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-quantoblue-dark mb-4">
-            How <span className="text-quantopurple">QuantoBooks</span> Works
+            How <span className="text-quantoblue">QuantoBooks</span> Works
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A simple process that transforms your financial management with artificial intelligence
@@ -52,18 +52,18 @@ const HowItWorks = () => {
                 <div 
                   key={index} 
                   className={`flex items-start mb-6 p-4 rounded-lg cursor-pointer transition-all ${
-                    activeStep === index ? "bg-quantopurple-light" : "hover:bg-gray-50"
+                    activeStep === index ? "bg-quantoblue-light" : "hover:bg-gray-50"
                   }`}
                   onClick={() => setActiveStep(index)}
                 >
                   <div className={`
                     h-8 w-8 rounded-full flex items-center justify-center text-white font-medium shrink-0 mr-4
-                    ${activeStep === index ? 'bg-quantopurple' : 'bg-gray-300'}
+                    ${activeStep === index ? 'bg-quantoblue' : 'bg-quantogrey'}
                   `}>
                     {index + 1}
                   </div>
                   <div>
-                    <h3 className={`font-semibold mb-1 ${activeStep === index ? 'text-quantopurple' : 'text-gray-800'}`}>
+                    <h3 className={`font-semibold mb-1 ${activeStep === index ? 'text-quantoblue' : 'text-gray-800'}`}>
                       {step.title}
                     </h3>
                     <p className="text-sm text-gray-600">
@@ -74,7 +74,7 @@ const HowItWorks = () => {
               ))}
 
               <div className="mt-8">
-                <Button className="w-full bg-quantopurple hover:bg-quantopurple-dark text-white">
+                <Button className="w-full bg-quantoblue hover:bg-quantoblue-dark text-white">
                   Get Started Now
                 </Button>
               </div>
