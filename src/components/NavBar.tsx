@@ -1,7 +1,7 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import quantoLogo from "/quanto-logo.webp";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,7 +34,7 @@ const NavBar = () => {
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="public/quanto-logo.webp" 
+              src={quantoLogo}
               alt="QuantoBooks Logo" 
               className="h-10 w-auto mr-2" 
             />

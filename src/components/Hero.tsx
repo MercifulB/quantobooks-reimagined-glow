@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import styles from "./Hero.module.css";
+import quantoLogo from "/quanto-logo.webp";
 
 const Hero = () => {
   return (
@@ -12,6 +13,13 @@ const Hero = () => {
       <div className="container relative z-10 mx-auto px-4 py-24 md:py-32 flex flex-col md:flex-row items-center">
         {/* Text Content */}
         <div className="md:w-1/2 md:pr-8 mb-12 md:mb-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <div className="mb-8">
+            <img 
+              src={quantoLogo}
+              alt="QuantoBooks Logo" 
+              className="h-12 w-auto"
+            />
+          </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-quantoblue-dark leading-tight mb-6">
             Accounting Powered by <span className="text-quantoblue">AI Intelligence</span>
           </h1>
