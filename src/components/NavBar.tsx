@@ -34,7 +34,7 @@ const NavBar = () => {
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
             <img 
-              src="/lovable-uploads/32ed1cdc-0538-4671-a1e8-85cfc4a06777.png" 
+              src="public/quanto-logo.webp" 
               alt="QuantoBooks Logo" 
               className="h-10 w-auto mr-2" 
             />

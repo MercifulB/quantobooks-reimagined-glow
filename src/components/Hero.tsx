@@ -1,12 +1,12 @@
-
 import { Button } from "@/components/ui/button";
+import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-white to-quantogrey-light pt-24 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-white to-quantoblue pt-24">
       <div className="absolute inset-0 z-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(19,82,222,0.3)_0%,rgba(255,255,255,0)_60%)]"></div>
-        <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_80%,rgba(187,193,211,0.4)_0%,rgba(255,255,255,0)_60%)]"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.3)_0%,rgba(255,255,255,0)_60%)]"></div>
+        <div className="absolute bottom-0 right-0 w-full h-full bg-[radial-gradient(circle_at_70%_80%,rgba(255,255,255,0.4)_0%,rgba(255,255,255,0)_60%)]"></div>
       </div>
       
       <div className="container relative z-10 mx-auto px-4 py-24 md:py-32 flex flex-col md:flex-row items-center">
@@ -26,101 +26,56 @@ const Hero = () => {
               Schedule Demo
             </Button>
           </div>
-          <div className="mt-12 flex items-center">
-            <div className="flex -space-x-3">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gray-200 flex items-center justify-center overflow-hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-full h-full text-gray-400">
-                    <path fillRule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-              ))}
-            </div>
-            <div className="ml-4">
-              <p className="text-sm font-medium text-gray-900">Trusted by 2,000+ businesses</p>
-              <div className="flex items-center mt-1">
-                {[1, 2, 3, 4, 5].map((star) => (
-                  <svg key={star} className="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                  </svg>
-                ))}
-                <p className="ml-2 text-sm text-gray-700">4.9/5 rating</p>
-              </div>
-            </div>
-          </div>
         </div>
 
-        {/* Image/Illustration */}
+        {/* Checkout Card */}
         <div className="md:w-1/2 relative animate-fade-in" style={{ animationDelay: "0.5s" }}>
-          <div className="relative w-full aspect-square max-w-lg mx-auto">
-            {/* Decorative elements */}
-            <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-quantoblue-light rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-float" style={{ animationDelay: "0s" }}></div>
-            <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-quantogrey-light rounded-full mix-blend-multiply filter blur-xl opacity-50 animate-float" style={{ animationDelay: "1s" }}></div>
-            
-            {/* Dashboard mockup */}
-            <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 w-full aspect-[4/3] transform rotate-2 hover:rotate-0 transition-transform duration-500">
-              <div className="h-8 bg-gray-50 border-b border-gray-100 flex items-center px-4">
-                <div className="flex space-x-2">
-                  <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                  <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                  <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                </div>
-              </div>
-              <div className="p-5">
-                <div className="flex justify-between items-center mb-6">
+          <div className={styles.parent}>
+            <div className={`${styles.card} ${styles.cart}`}>
+              <label className={styles.title}>ACCOUNTING DASHBOARD</label>
+              <div className={styles.steps}>
+                <div className={styles.step}>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800">Financial Dashboard</h3>
-                    <p className="text-sm text-gray-500">May 2025</p>
+                    <span>BUSINESS ADDRESS</span>
+                    <p>111 Peter Street</p>
+                    <p>Toronto, Ontario, Canada</p>
                   </div>
-                  <div className="bg-quantoblue text-white text-xs px-3 py-1 rounded-full">AI-Powered</div>
-                </div>
-                
-                <div className="space-y-4">
-                  <div className="bg-gray-50 p-3 rounded-lg">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium text-gray-700">Revenue</span>
-                      <span className="text-sm font-bold text-green-500">+12.5%</span>
-                    </div>
-                    <div className="h-2 bg-gray-200 rounded-full mt-2 overflow-hidden">
-                      <div className="h-full bg-green-500 rounded-full" style={{width: '75%'}}></div>
+                  <hr />
+                  <div>
+                    <span>PAYMENT METHOD</span>
+                    <p>Business Account</p>
+                    <p>**** **** **** 4243</p>
+                  </div>
+                  <hr />
+                  <div className={styles.promo}>
+                    <span>HAVE A PROMO CODE?</span>
+                    <form className={styles.form}>
+                      <input type="text" placeholder="Enter a Promo Code" className={styles.input_field} />
+                      <button>Apply</button>
+                    </form>
+                  </div>
+                  <hr />
+                  <div className={styles.payments}>
+                    <span>QUARTERLY SUBSCRIPTION</span>
+                    <div className={styles.details}>
+                      <span>Base Price:</span>
+                      <span>$240.00</span>
+                      <span>Processing Fee:</span>
+                      <span>$10.00</span>
+                      <span>HST (13%):</span>
+                      <span>$32.50</span>
                     </div>
                   </div>
-                  
-                  <div className="bg-gray-50 p-3 rounded-lg">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm font-medium text-gray-700">Expenses</span>
-                      <span className="text-sm font-bold text-red-500">-3.2%</span>
-                    </div>
-                    <div className="h-2 bg-gray-200 rounded-full mt-2 overflow-hidden">
-                      <div className="h-full bg-red-500 rounded-full" style={{width: '45%'}}></div>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-quantoblue-light p-3 rounded-lg">
-                    <div className="flex items-center">
-                      <div className="h-8 w-8 rounded-full bg-quantoblue flex items-center justify-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M12 2l9 4.9V17L12 22l-9-4.9V7z"/><path d="M12 16.5v-11"/><path d="M7 7.8l5 2.7"/><path d="M17 7.8l-5 2.7"/>
-                        </svg>
-                      </div>
-                      <div className="ml-3">
-                        <p className="text-xs text-quantoblue font-semibold">AI INSIGHT</p>
-                        <p className="text-sm text-gray-700">Cut software subscriptions to save $1,245/month</p>
-                      </div>
-                    </div>
+                  <hr />
+                  <div className={styles.footer}>
+                    <label className={styles.price}>$282.50</label>
+                    <button className={styles.checkout_btn}>Subscribe Now</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Bottom Wave */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg className="relative block w-full h-12 md:h-24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
-        </svg>
       </div>
     </section>
   );

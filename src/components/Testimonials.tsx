@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 interface Testimonial {
@@ -125,13 +124,33 @@ const Testimonials = () => {
 
         {/* Logos */}
         <div className="mt-20">
-          <p className="text-center text-gray-500 mb-8">TRUSTED BY INNOVATIVE COMPANIES</p>
+          <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-12">Seamlessly connects with your favourite tools.</h2>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70">
-            {[1, 2, 3, 4, 5].map((i) => (
-              <div key={i} className="h-12 flex items-center justify-center">
-                <div className="h-8 w-32 bg-gray-300 rounded"></div>
-              </div>
-            ))}
+            <img 
+              src="https://cdn.worldvectorlogo.com/logos/shopify-2.svg" 
+              alt="Shopify" 
+              className="h-8 w-auto hover:opacity-100 transition-opacity" 
+            />
+            <img 
+              src="https://cdn.worldvectorlogo.com/logos/salesforce-2.svg" 
+              alt="Salesforce" 
+              className="h-8 w-auto hover:opacity-100 transition-opacity" 
+            />
+            <img 
+              src="https://cdn.worldvectorlogo.com/logos/stripe-4.svg" 
+              alt="Stripe" 
+              className="h-8 w-auto hover:opacity-100 transition-opacity" 
+            />
+            <img 
+              src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" 
+              alt="PayPal" 
+              className="h-8 w-auto hover:opacity-100 transition-opacity" 
+            />
+            <img 
+              src="https://cdn.worldvectorlogo.com/logos/quickbooks-2.svg" 
+              alt="QuickBooks" 
+              className="h-8 w-auto hover:opacity-100 transition-opacity" 
+            />
           </div>
         </div>
       </div>
