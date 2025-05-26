@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import quantoLogo from "/quanto-logo.webp";
+import quantoLogo from "/quanto-t-logo.png";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
