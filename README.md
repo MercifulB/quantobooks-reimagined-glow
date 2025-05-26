@@ -1,6 +1,6 @@
 # QuantoBooks Reimagined
 
-A modern, responsive landing page for QuantoBooks, showcasing their AI-powered accounting solutions.
+A modern, responsive landing page for QuantoBooks.
 
 ## Features
 
